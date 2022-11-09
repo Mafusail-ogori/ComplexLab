@@ -1,7 +1,7 @@
 package command;
 
 import data.TouristAttractionsData;
-import touristAtraction.TouristTicket;
+import touristAttraction.TouristTicket;
 
 import java.util.List;
 

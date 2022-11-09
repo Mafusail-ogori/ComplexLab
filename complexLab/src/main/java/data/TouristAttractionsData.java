@@ -1,9 +1,9 @@
 package data;
 
-import touristAtraction.TicketType;
-import touristAtraction.TouristTicket;
-import touristAtraction.TouristTicketTitle;
-import touristAtraction.TransportationType;
+import touristAttraction.TicketType;
+import touristAttraction.TouristTicket;
+import touristAttraction.TouristTicketTitle;
+import touristAttraction.TransportationType;
 
 import java.util.*;
 

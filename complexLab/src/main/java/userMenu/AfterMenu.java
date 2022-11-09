@@ -3,6 +3,7 @@ package userMenu;
 import command.*;
 import data.TouristAttractionsData;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 import static graphicsText.Graphics.finalMenuText;
@@ -10,7 +11,7 @@ import static userMenu.Menu.userChoice;
 import static userMenu.SortMenu.sortMenu;
 
 public class AfterMenu {
-    public static boolean afterMenu(TouristAttractionsData ticketsDataBase){
+    public static boolean afterMenu(TouristAttractionsData ticketsDataBase) throws IOException {
         HashMap<Integer, Command> afterMenuCommand = new HashMap<>();
         afterMenuCommand.put(1, new QuizCommand(ticketsDataBase));
         afterMenuCommand.put(2, new ShowAllPorposalsCommand(ticketsDataBase));

@@ -9,13 +9,13 @@ public class TouristTicket {
     protected boolean hasAnimal;
     protected boolean needNoiseReduction;
     protected boolean includesParty;
-    protected touristAtraction.TicketType type;
+    protected TicketType type;
     protected double price;
     protected int hotelRating;
     protected TransportationType transportationType;
 
     public TouristTicket(TouristTicketTitle title, int period, int peopleAmount, boolean hasChild, boolean hasAnimal,
-                         boolean needNoiseReduction, boolean includesParty, touristAtraction.TicketType type, double price,
+                         boolean needNoiseReduction, boolean includesParty, TicketType type, double price,
                          int hotelRating, TransportationType transportationType) {
         this.title = title;
         this.period = period;
