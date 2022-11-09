@@ -1,13 +1,13 @@
-package touristAttraction;
+package touristattraction;
 
 import java.util.Random;
 
-public enum TransportationType {
+public enum TransportationTypeEnum {
     Car,
     Bus,
     Train,
     Plane;
-    public static TransportationType getRandomTransport(){
+    public static TransportationTypeEnum getRandomTransport(){
         Random random = new Random();
         return values()[random.nextInt(values().length)];
     }

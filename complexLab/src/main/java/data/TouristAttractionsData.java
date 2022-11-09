@@ -1,14 +1,14 @@
 package data;
 
-import touristAttraction.TicketType;
-import touristAttraction.TouristTicket;
-import touristAttraction.TouristTicketTitle;
-import touristAttraction.TransportationType;
+import touristattraction.TicketTypeEnum;
+import touristattraction.TouristTicket;
+import touristattraction.TouristTicketTitleEnum;
+import touristattraction.TransportationTypeEnum;
 
 import java.util.*;
 
-import static graphicsText.Graphics.*;
-import static graphicsText.Graphics.lowerBound;
+import static graphicstext.Graphics.*;
+import static graphicstext.Graphics.lowerBound;
 
 public class TouristAttractionsData {
 
@@ -22,10 +22,10 @@ public class TouristAttractionsData {
     public void touristTicketGenerator() {
         Random random = new Random();
         for (var i = 0; i < 4000; i++) {
-            this.touristTickets.add(new TouristTicket(TouristTicketTitle.getRandomTitle(), random.nextInt(3, 28),
+            this.touristTickets.add(new TouristTicket(TouristTicketTitleEnum.getRandomTitle(), random.nextInt(3, 28),
                     random.nextInt(1, 11), random.nextBoolean(),
-                    random.nextBoolean(), random.nextBoolean(), random.nextBoolean(), TicketType.getTicketType(),
-                    random.nextDouble(250.5, 12000), random.nextInt(1, 6), TransportationType.getRandomTransport()));
+                    random.nextBoolean(), random.nextBoolean(), random.nextBoolean(), TicketTypeEnum.getTicketType(),
+                    random.nextDouble(250.5, 12000), random.nextInt(1, 6), TransportationTypeEnum.getRandomTransport()));
         }
     }
 
@@ -43,7 +43,7 @@ public class TouristAttractionsData {
         return check == real;
     }
 
-    public boolean isSameTransport(String choice, TransportationType transportationType){
+    public boolean isSameTransport(String choice, TransportationTypeEnum transportationType){
         return choice.equalsIgnoreCase(transportationType.toString());
     }
     public StringBuilder questioner() {

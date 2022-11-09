@@ -1,4 +1,4 @@
-package userMenu;
+package usermenu;
 
 import command.*;
 import data.TouristAttractionsData;
@@ -6,9 +6,9 @@ import data.TouristAttractionsData;
 import java.io.IOException;
 import java.util.HashMap;
 
-import static graphicsText.Graphics.finalMenuText;
-import static userMenu.Menu.userChoice;
-import static userMenu.SortMenu.sortMenu;
+import static graphicstext.Graphics.finalMenuText;
+import static usermenu.Menu.userChoice;
+import static usermenu.SortMenu.sortMenu;
 
 public class AfterMenu {
     public static boolean afterMenu(TouristAttractionsData ticketsDataBase) throws IOException {

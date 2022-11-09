@@ -1,4 +1,4 @@
-package userMenu;
+package usermenu;
 
 import command.Command;
 import command.SortByPeriodCommand;
@@ -9,8 +9,8 @@ import data.TouristAttractionsData;
 import java.io.IOException;
 import java.util.HashMap;
 
-import static graphicsText.Graphics.sortMenuText;
-import static userMenu.Menu.userChoice;
+import static graphicstext.Graphics.sortMenuText;
+import static usermenu.Menu.userChoice;
 
 public class SortMenu {
     public static void sortMenu(TouristAttractionsData ticketsDataBase) throws IOException {

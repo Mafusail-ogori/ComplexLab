@@ -1,13 +1,13 @@
-package touristAttraction;
+package touristattraction;
 
 import java.util.Random;
-public enum TicketType {
+public enum TicketTypeEnum {
     Resort,
     Excursion,
     Healing,
     Shopping,
     Cruise;
-    public static TicketType getTicketType() {
+    public static TicketTypeEnum getTicketType() {
         Random random = new Random();
         return values()[random.nextInt(values().length)];
     }

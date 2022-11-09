@@ -1,4 +1,4 @@
-package userMenu;
+package usermenu;
 
 import data.TouristAttractionsData;
 import data.UserData;
@@ -6,8 +6,8 @@ import data.UserData;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static userMenu.AfterMenu.afterMenu;
-import static userMenu.StartMenu.startMenu;
+import static usermenu.AfterMenu.afterMenu;
+import static usermenu.StartMenu.startMenu;
 
 public class Menu {
 

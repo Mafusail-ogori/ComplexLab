@@ -1,4 +1,4 @@
-package userMenu;
+package usermenu;
 
 import command.*;
 import data.UserData;
@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static graphicsText.Graphics.startMenuText;
-import static userMenu.Menu.userChoice;
+import static graphicstext.Graphics.startMenuText;
+import static usermenu.Menu.userChoice;
 
 public class StartMenu {
     public static void startMenu(UserData database) throws IOException {

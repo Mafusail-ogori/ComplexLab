@@ -1,9 +1,9 @@
-package touristAttraction;
+package touristattraction;
 
 import java.util.Random;
 
 
-public enum TouristTicketTitle {
+public enum TouristTicketTitleEnum {
     AzurePassion,
     GreatSunrise,
     ArrogantFruit,
@@ -11,7 +11,7 @@ public enum TouristTicketTitle {
     MoonlightShine,
     ProminentTime;
 
-    public static TouristTicketTitle getRandomTitle() {
+    public static TouristTicketTitleEnum getRandomTitle() {
         Random random = new Random();
         return values()[random.nextInt(values().length)];
     }

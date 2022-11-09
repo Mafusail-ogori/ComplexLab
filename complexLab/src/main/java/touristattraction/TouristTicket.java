@@ -1,22 +1,22 @@
-package touristAttraction;
+package touristattraction;
 
 
 public class TouristTicket {
-    protected TouristTicketTitle title;
+    protected TouristTicketTitleEnum title;
     protected int period;
     protected int peopleAmount;
     protected boolean hasChild;
     protected boolean hasAnimal;
     protected boolean needNoiseReduction;
     protected boolean includesParty;
-    protected TicketType type;
+    protected TicketTypeEnum type;
     protected double price;
     protected int hotelRating;
-    protected TransportationType transportationType;
+    protected TransportationTypeEnum transportationType;
 
-    public TouristTicket(TouristTicketTitle title, int period, int peopleAmount, boolean hasChild, boolean hasAnimal,
-                         boolean needNoiseReduction, boolean includesParty, TicketType type, double price,
-                         int hotelRating, TransportationType transportationType) {
+    public TouristTicket(TouristTicketTitleEnum title, int period, int peopleAmount, boolean hasChild, boolean hasAnimal,
+                         boolean needNoiseReduction, boolean includesParty, TicketTypeEnum type, double price,
+                         int hotelRating, TransportationTypeEnum transportationType) {
         this.title = title;
         this.period = period;
         this.peopleAmount = peopleAmount;
@@ -49,7 +49,7 @@ public class TouristTicket {
         return hotelRating;
     }
 
-    public TouristTicketTitle getTitle() {
+    public TouristTicketTitleEnum getTitle() {
         return title;
     }
 
@@ -73,7 +73,7 @@ public class TouristTicket {
         return includesParty;
     }
 
-    public TransportationType getTransportationType() {
+    public TransportationTypeEnum getTransportationType() {
         return transportationType;
     }
 };

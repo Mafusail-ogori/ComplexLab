@@ -1,4 +1,4 @@
-package graphicsText;
+package graphicstext;
 
 public class Graphics {
     public static String upperBound = "┌────────────────┬┬────────────────┬┬─────────┬┬────────────┬┬──────────────┐\n" +
